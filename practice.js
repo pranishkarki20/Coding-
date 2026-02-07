@@ -21,3 +21,41 @@ button.addEventListener("click" , function(){
     document.getElementById("print").textContent = perimeter;
 })
 */
+
+/*button.addEventListener("click" ,function(){
+    let username = document.getElementById("username").value ;
+    let Password = document.getElementById("password").value;
+    username = username.toUpperCase();
+    Password = Password.toLowerCase();
+    document.getElementById("print").textContent = "Your user name is " + username;
+    document.getElementById("print2").textContent = "Your password is" + Password;
+}) */
+
+button.addEventListener("click" , function(){
+    let  Username = document.getElementById("username").value 
+    let Password = document.getElementById("password").value
+    let uresult =  Username.startsWith(" ");
+    let presult = Password.startsWith(" ")
+    let ppresult = Password.endsWith(" ");
+    if(uresult){
+        document.getElementById("print").textContent = "Do not write the space infront of yur usernaem"
+    }
+    else{
+        document.getElementById("print").textContent ="Good Person";
+    }
+
+    if(presult && ppresult){
+        document.getElementById("print").textContent = "Do not write space on the begining and at the end" 
+    }
+    else if(presult){
+        document.getElementById("print").textContent = "Do not write space on the begining "  
+    }
+
+    else if(ppresult){
+        document.getElementById("print").textContent = "Do not write space at the end"
+    }
+
+    else {
+        document.getElementById("print").textContent = "Good"
+    };
+})
