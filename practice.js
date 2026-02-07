@@ -37,11 +37,13 @@ button.addEventListener("click" , function(){
     let uresult =  Username.startsWith(" ");
     let presult = Password.startsWith(" ")
     let ppresult = Password.endsWith(" ");
+
     if(uresult){
-        document.getElementById("print").textContent = "Do not write the space infront of yur usernaem"
+        let reu = Username.trim();
+        document.getElementById("print1").textContent = "The Space from the username was removed " + reu ;
     }
     else{
-        document.getElementById("print").textContent ="Good Person";
+        document.getElementById("print1").textContent ="Good Person";
     }
 
     if(presult && ppresult){
