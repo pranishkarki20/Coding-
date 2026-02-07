@@ -34,4 +34,9 @@ button.addEventListener("click", function () {
         document.getElementById("myh3").textContent =
             "Login successful";
     }
+
+        setTimeout(() => {
+        location.reload();
+    }, 1000);
+
 });
