@@ -1,0 +1,24 @@
+#button{
+    text-align: center;
+}
+
+.log{
+    padding-top: 240px;
+    padding-left: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    cursor: pointer;
+    border-width: 10px ;
+    border-color: black;
+}
+ input{
+    padding:5px;
+    border-radius: 10px;
+ }
+
+.log label{
+    display: flex;
+    justify-content: center;
+}
