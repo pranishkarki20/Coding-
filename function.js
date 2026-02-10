@@ -28,3 +28,18 @@ function add(x, y){
 
 console.log(add(2, 7));
 */
+
+const mybut = document.getElementById("button") ;
+mybut.addEventListener("click" , function(){
+let  a = document.getElementById("a").value ;
+a = Number(a)
+let  b = document.getElementById("b").value;
+b = Number(b)
+function add (a , b) {
+    let result = a + b ;
+    return result;
+}
+
+let answeer = add ( a , b) ;
+document.getElementById("output").textContent =  `The sum of the digits are ${answeer}`;
+})
