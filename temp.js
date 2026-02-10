@@ -9,10 +9,13 @@ function convert(){
        temp = textbox.value ;
        temp = Number(temp);
        temp = temp * 9 / 5 + 22 ;
-       result.textContent = temp.to(fixed+ "f";
+       result.textContent = temp.to(fixed+ "f");
     }
     else if(tocl.checked){
-
+        temp = textbox.value ;
+       temp = Number(temp);
+       temp = (temp -32) / (5/9);
+       result.textContent = temp.to(fixed+ "f");
     }
     else{
         result.textcontent = "Select a unit " ;
