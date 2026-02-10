@@ -1,0 +1,38 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: aqua ;
+}
+
+form{
+    background-color: aquamarine;
+    text-align: center;
+    max-width:  50%;
+    margin: auto ;
+    padding:25px;
+    border-radius: 10px;
+    box-shadow: 5px , 5px ;
+}
+form:hover{
+    background-color: white;
+}
+
+#textbox{
+    width: 50%;
+    text-align: center;
+    font-size : 1em ;
+    border: 5px solid salmon;
+    border-radius: 10px;
+}
+
+label{font-style: italic;
+    font-size: 2em;
+    gap: initial;
+    padding: 10px , 15px;
+}
+
+button{
+    background-color: brown;
+    font-size: 30px;
+    border : radius;
+    
+}
