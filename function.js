@@ -9,10 +9,22 @@ happybirthday("Pranish" , 25 ) ;
 happybirthday("Ram" , 45 );
 */
 
-function add(x , y){
+//Method 1 
+
+ /*function add(x , y){
     let result = x+y ; 
     return result ; 
 }
 
 let answer = add ( 2 , 3 ) ;
 console.log(answer)
+*/
+
+// Method 2 
+ /*
+function add(x, y){
+    return x + y ; 
+}
+
+console.log(add(2, 7));
+*/
