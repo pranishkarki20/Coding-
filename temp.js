@@ -8,16 +8,16 @@ function convert(){
     if(tofar.checked){
        temp = textbox.value ;
        temp = Number(temp);
-       temp = temp * 9 / 5 + 22 ;
-       result.textContent = temp.to(fixed+ "f");
+       temp = temp * 9 / 5 + 32 ;
+       result.textContent = temp.toFixed(2) + "°F";
     }
     else if(tocl.checked){
         temp = textbox.value ;
        temp = Number(temp);
-       temp = (temp -32) / (5/9);
-       result.textContent = temp.to(fixed+ "f");
+       temp = (temp -32) / (9/5);
+       result.textContent = temp.toFixed(2) + "°C";
     }
     else{
-        result.textcontent = "Select a unit " ;
+        result.textContent = "Select a unit " ;
     }
 }
